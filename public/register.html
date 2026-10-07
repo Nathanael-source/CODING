@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>Register</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link
+    rel="stylesheet"
+    href="/css/styles.css"
+>
+
+</head>
+
+<body class="bg-gray-950 text-white">
+
+<main
+    class="min-h-screen flex items-center justify-center px-6"
+>
+
+<form
+    id="registerForm"
+    class="glass-card p-8 w-full max-w-md"
+>
+
+<h1 class="text-3xl font-bold">
+    Register
+</h1>
+
+<input
+    id="name"
+    class="form-input mt-8"
+    type="text"
+    placeholder="Nama"
+    minlength="2"
+    maxlength="100"
+    required
+>
+
+<input
+    id="email"
+    class="form-input mt-4"
+    type="email"
+    placeholder="Email"
+    maxlength="255"
+    required
+>
+
+<input
+    id="password"
+    class="form-input mt-4"
+    type="password"
+    placeholder="Password minimal 8 karakter"
+    minlength="8"
+    required
+>
+
+<button
+    class="btn-primary w-full mt-6"
+    type="submit"
+>
+    Buat Akun
+</button>
+
+<p
+    id="result"
+    class="mt-4 text-center"
+></p>
+
+</form>
+
+</main>
+
+<script src="/js/app.js"></script>
+<script src="/js/auth.js"></script>
+
+</body>
+
+</html>
