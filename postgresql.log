@@ -1,0 +1,29 @@
+2026-10-07 22:10:04.310 +07 [20204] LOG:  starting PostgreSQL 18.6 on x86_64-windows, compiled by msvc-19.44.35229, 64-bit
+2026-10-07 22:10:04.315 +07 [20204] LOG:  listening on IPv6 address "::1", port 5432
+2026-10-07 22:10:04.315 +07 [20204] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-10-07 22:10:04.378 +07 [26496] LOG:  database system was shut down at 2026-10-07 22:09:32 +07
+2026-10-07 22:10:04.384 +07 [20204] LOG:  database system is ready to accept connections
+2026-10-07 22:10:22.214 +07 [11120] FATAL:  password authentication failed for user "postgres"
+2026-10-07 22:10:22.214 +07 [11120] DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2026-10-07 22:10:32.591 +07 [13652] FATAL:  password authentication failed for user "postgres"
+2026-10-07 22:10:32.591 +07 [13652] DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2026-10-07 22:11:01.873 +07 [25336] ERROR:  canceling statement due to user request
+2026-10-07 22:11:01.873 +07 [20204] LOG:  received fast shutdown request
+2026-10-07 22:11:01.873 +07 [23200] LOG:  shutting down
+2026-10-07 22:11:01.879 +07 [23200] LOG:  checkpoint starting: shutdown immediate
+2026-10-07 22:11:01.879 +07 [20204] LOG:  aborting any active transactions
+2026-10-07 22:11:01.889 +07 [23200] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.002 s, total=0.016 s; sync files=2, longest=0.002 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/17F3708, redo lsn=0/17F3708
+2026-10-07 22:11:01.897 +07 [20204] LOG:  background worker "logical replication launcher" (PID 25336) exited with exit code 1
+2026-10-07 22:11:01.940 +07 [20204] LOG:  database system is shut down
+2026-10-07 22:12:10.336 +07 [25976] LOG:  starting PostgreSQL 18.6 on x86_64-windows, compiled by msvc-19.44.35229, 64-bit
+2026-10-07 22:12:10.340 +07 [25976] LOG:  listening on IPv6 address "::1", port 5432
+2026-10-07 22:12:10.340 +07 [25976] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-10-07 22:12:10.398 +07 [9716] LOG:  database system was shut down at 2026-10-07 22:11:01 +07
+2026-10-07 22:12:10.404 +07 [25976] LOG:  database system is ready to accept connections
+2026-10-07 22:13:19.023 +07 [6272] ERROR:  syntax error at or near "postgres" at character 1
+2026-10-07 22:13:19.023 +07 [6272] STATEMENT:  postgres=#
+	CREATE DATABASE web_platform;
+2026-10-07 22:14:05.738 +07 [23124] ERROR:  database "web_platform" already exists
+2026-10-07 22:14:05.738 +07 [23124] STATEMENT:  CREATE DATABASE web_platform;
+2026-10-07 22:17:10.394 +07 [10744] LOG:  checkpoint starting: time
+2026-10-07 22:18:59.953 +07 [10744] LOG:  checkpoint complete: wrote 1010 buffers (6.2%), wrote 3 SLRU buffers; 1 WAL file(s) added, 0 removed, 0 recycled; write=109.290 s, sync=0.175 s, total=109.561 s; sync files=331, longest=0.003 s, average=0.001 s; distance=4850 kB, estimate=4850 kB; lsn=0/1CB0200, redo lsn=0/1CB0170
